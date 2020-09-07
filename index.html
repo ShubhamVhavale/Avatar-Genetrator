@@ -1,0 +1,41 @@
+<html>
+	<head>
+		<title>Avatar Generator</title>
+		<link rel="stylesheet" type="text/css" href="style.css" >
+		 <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+	</head>
+	<body>
+		<section>
+		<h1>WHAT DOES YOUR NAME SAY ABOUT YOUR PESONALITY</H1>
+		<div class="center">
+			<div class="details">
+				<label>Enter Your name</label> <br>
+				<input type='text' name="" id="nameid">
+			</div>
+			<div class="imgdiv">
+				<img src="111.jpg" width="200" height="200" class="imgchng">
+			</div>
+			<button>Click me</button>
+		</div>
+		</section>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+			<script>
+			$(document).ready(function()
+			{
+				$('button').click(function()
+				{
+					const name = $('#nameid').val();
+					$('.imgchng').attr('src',`https://joeschmoe.io/api/v1/${name}`);
+					const b = $('.imgchng');
+					console.log(b);
+			});
+			});
+</script>
+
+
+
+
+	</body>
+</html>
