@@ -1,5 +1,11 @@
 *{padding: 0; margin: 0; box-sizing: border-box; font-family: 'Luckiest Guy', cursive;}
 
+body
+{
+	Inline-style:solid;
+	Background-image:url("https://source.unsplash.com/1400x900/?nature,water");
+}
+
 section
 {
 	width: 100%; 
